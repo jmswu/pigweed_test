@@ -8,6 +8,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 project(app)
 
 add_subdirectory(deps/pigweed)
+pw_set_backend(pw_log pw_log_string)
 
 add_executable(${PROJECT_NAME} main.cpp)
 target_link_libraries(${PROJECT_NAME} PUBLIC pw_log)
