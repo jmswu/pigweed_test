@@ -2,6 +2,8 @@
 #include <cstdlib>
 #include "pw_log/log.h"
 
+#define PW_LOG_MODULE_NAME "TEST_LOG"
+
 int main()
 {
 
